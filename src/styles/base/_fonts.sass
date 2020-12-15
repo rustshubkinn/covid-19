@@ -1,0 +1,12 @@
+@mixin font($fname, $fstyle, $fweight, $furl)
+  @font-face
+    font-family: $fname
+    font-style: $fstyle
+    font-weight: $fweight
+    src: local($fname), url($furl) format("woff2")
+
+@include font("Gelion", normal, 400, "../../fonts/Gelion-Regular.woff2")
+@include font("Gelion", medium, 500, "../../fonts/Gelion-Medium.woff2")
+@include font("Gelion", "semibold", 600, "../../fonts/Gelion-SemiBold.woff2")
+@include font("Gelion", bold, 700, "../../fonts/Gelion-Bold.woff2")
+@include font("Red Hat Display", bold, 700, "../../fonts/RedHatDisplay-Bold.woff2")
