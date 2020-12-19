@@ -33,14 +33,14 @@ img
   max-width: 100%
 
 h2.covid19
-  font-family: Red-Hat-Display ,serif
+  font-family: Red Hat Display, serif
   font-size: 29px
   line-height: 36px
   font-weight: 700
   color: $red-title-color
 
 h3.title
-  font-family: Red-Hat-Display, serif
+  font-family: Red Hat Display, serif
   font-size: 50px
   line-height: 60px
   font-weight: 700
@@ -51,4 +51,10 @@ h3.title
   @include sm(max-width, rem(510))
   @include md(max-width, rem(690))
   @include lg(max-width, rem(930))
-  @include xl(max-width, rem(1140))
+  @include xl(max-width, rem(1440))
+
+@media ( max-width: 767px )
+  h2.covid19
+    font-size: 23px
+  h3.title
+    font-size: 35px

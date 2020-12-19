@@ -1,0 +1,69 @@
+section.let-us-help
+  margin-top: 50px
+  .let-us-help-wrapper
+    display: flex
+    justify-content: space-between
+    .let-us-text
+      position: relative
+      width: 45%
+      margin-top: 150px
+      p
+        width: 80%
+      a.help-btn
+        background-color: $button-color
+        color: #ffffff
+        display: inline-block
+        box-shadow: 0px 8px 87px rgba(0, 0, 0, 0.1)
+        border-radius: 65px
+        padding: 25px 65px
+        font-weight: 700
+        font-size: 24px
+        line-height: 29px
+        margin-top: 25px
+    .let-us-img
+      img
+        position: absolute
+        max-width: 60%
+        left: 45%
+
+@media ( max-width: 1470px )
+  section.let-us-help
+    .let-us-help-wrapper
+      padding: 0 30px
+      .let-us-text
+        width: 50%
+
+@media ( max-width: 1199px )
+  section.let-us-help
+    .let-us-help-wrapper
+      padding: 0
+      .let-us-text
+        width: 60%
+        margin-top: 70px
+
+@media ( max-width: 991px )
+  section.let-us-help
+    .let-us-help-wrapper
+      flex-direction: column
+      align-items: center
+      .let-us-text
+        width: 100%
+        text-align: center
+        p
+          width: 100%
+      .let-us-img
+        img
+          position: relative
+          max-width: 100%
+          width: 100%
+          margin-top: 20px
+          left: -5%
+
+@media ( max-width: 767px )
+  section.let-us-help
+    .let-us-help-wrapper
+      .let-us-text
+        a.help-btn
+          padding: 16px 35px
+          font-size: 18px
+          font-weight: 500
