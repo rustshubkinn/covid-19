@@ -1,12 +1,18 @@
 section.let-us-help
-  margin-top: 50px
+  background-image: url(../../img/hero-image-cropped.png)
+  background-repeat: no-repeat
+  background-position: top right
+  background-size: 1000px
+  position: relative
+  margin-top: 56px
+  padding: 150px 0
   .let-us-help-wrapper
     display: flex
     justify-content: space-between
+    align-items: center
     .let-us-text
-      position: relative
-      width: 45%
-      margin-top: 150px
+      max-width: 50%
+      margin-top: 130px
       p
         width: 80%
       a.help-btn
@@ -20,44 +26,32 @@ section.let-us-help
         font-size: 24px
         line-height: 29px
         margin-top: 25px
-    .let-us-img
-      img
-        position: absolute
-        max-width: 60%
-        left: 45%
 
-@media ( max-width: 1470px )
+@media ( max-width: 1500px )
   section.let-us-help
+    background-size: 800px
+    padding: 100px 0
     .let-us-help-wrapper
-      padding: 0 30px
       .let-us-text
-        width: 50%
+        margin-top: 30px
+        max-width: 45%
 
 @media ( max-width: 1199px )
   section.let-us-help
-    .let-us-help-wrapper
-      padding: 0
-      .let-us-text
-        width: 60%
-        margin-top: 70px
-
-@media ( max-width: 991px )
-  section.let-us-help
+    background-image: url(../../img/let-us-help-img.webp)
+    padding: 0
+    padding-bottom: 75%
+    background-position: center bottom
+    background-size: 100%
     .let-us-help-wrapper
       flex-direction: column
-      align-items: center
       .let-us-text
-        width: 100%
+        max-width: 100%
         text-align: center
         p
-          width: 100%
-      .let-us-img
-        img
-          position: relative
-          max-width: 100%
-          width: 100%
-          margin-top: 20px
-          left: -5%
+          width: 70%
+          margin: 0 auto
+          margin-top: 15px
 
 @media ( max-width: 767px )
   section.let-us-help

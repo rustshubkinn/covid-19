@@ -20,6 +20,7 @@ body
   font-size: 18px
   line-height: 40px
   color: $text-color
+  min-width: 320px
 
 a
   text-decoration: none
@@ -30,7 +31,7 @@ a
 
 img
   width: 100%
-  max-width: 100%
+  //max-width: 100%
 
 h2.covid19
   font-family: Red Hat Display, serif
@@ -45,6 +46,9 @@ h3.title
   line-height: 60px
   font-weight: 700
   color: $green-title-color
+
+.header-wrapper
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, #FFF8F8 100%, #B57474 100%)
 
 .container
   @include container()

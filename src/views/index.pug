@@ -5,9 +5,11 @@ block variables
 	- const title = "Covid-19"
 
 block content
-	include ../blocks/modules/header/header.pug
-	main 
+	div(class="header-wrapper")
+		include ../blocks/modules/header/header.pug
 		include ../blocks/modules/let-us-help/let-us-help.pug
+	main
+		include ../blocks/modules/about-us/about-us.pug
 
 block scripts
 	script(src="js/main.js")

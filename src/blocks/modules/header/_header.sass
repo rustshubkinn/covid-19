@@ -4,7 +4,7 @@ header
     display: flex
     justify-content: space-between
     align-items: center
-    margin-top: 33px
+    padding: 33px 0
 
     .logo
       a
@@ -27,6 +27,7 @@ header
         align-items: center
         a
           line-height: 10px
+          transition: color .25s ease
         &:not(:last-child)
           margin-right: 40px
           &::after
@@ -48,6 +49,7 @@ header
           border-radius: 40px
           font-weight: 500
           padding: 16px 44px
+          transition: color .25s ease, background-color .25s ease
           &:hover
             background-color: #ff383d
             color: #ffffff
