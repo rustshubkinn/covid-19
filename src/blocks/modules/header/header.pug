@@ -1,3 +1,5 @@
+include ../../components/contact-button/contact-button
+
 header 
   div(class="container")
     nav  
@@ -15,5 +17,5 @@ header
         li  
           a(href="#") Prevention
         li  
-          a(href="#") Contact
+          +contact-button('#', "Contact")
 

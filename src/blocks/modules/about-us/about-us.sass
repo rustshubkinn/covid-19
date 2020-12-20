@@ -1,30 +1,39 @@
 section.about-us
-  background: url(../img/about-us-bg.webp) no-repeat
-  background-size: contain
-
-  margin-top: 336px
+  background-image: url(../img/about-us-img.webp), url(../img/about-us-bg.webp)
+  background-size: 1000px, 220px
+  background-repeat: no-repeat, no-repeat
+  background-position: top left, bottom right
+  padding: 290px
   .about-us-wrapper
     display: flex
-    justify-content: space-between
+    justify-content: flex-end
     align-items: center
-    position: relative
-    .about-us-img
-      img
-        position: absolute
-        width: 70%
-        right: 50%
-        top: -65%
     .about-us-text
-      max-width: 40%
+      max-width: 45%
       p
         font-size: 20px
         line-height: 43px
         margin-bottom: 56px
-      .learn-btn
-        color: $red-title-color
-        font-weight: 600
-        font-size: 20px
-        line-height: 24px
-        background: rgba(250, 86, 82, 0.15)
-        border-radius: 65px
-        padding: 21px 50px
+
+@media ( max-width: 1670px )
+  section.about-us
+    background-size: 800px, 170px
+    padding: 180px
+
+@media ( max-width: 1330px )
+  section.about-us
+    background-size: 600px, 100px
+    padding: 130px
+
+@media ( max-width: 1199px )
+  section.about-us
+    padding: 0
+    margin-top: 70px
+    padding-bottom: 75%
+    background-size: 80%, 80px
+    background-position: center bottom, right bottom
+    .about-us-wrapper
+      .about-us-text
+        max-width: 100%
+        margin: 0 auto
+        text-align: center

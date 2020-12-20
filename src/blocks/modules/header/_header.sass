@@ -25,11 +25,10 @@ header
         display: flex
         flex-direction: column
         align-items: center
+        margin-right: 40px
         a
           line-height: 10px
           transition: color .25s ease
-        &:not(:last-child)
-          margin-right: 40px
           &::after
             content: '.'
             display: none
@@ -42,17 +41,6 @@ header
             margin-top: 9px
             &::after
               display: block
-
-        &:last-child
-          color: #FF383D
-          border: 1px solid #FF383D
-          border-radius: 40px
-          font-weight: 500
-          padding: 16px 44px
-          transition: color .25s ease, background-color .25s ease
-          &:hover
-            background-color: #ff383d
-            color: #ffffff
 
 @media ( max-width: 991px )
   header
@@ -94,4 +82,5 @@ header
             grid-row: 3/4
             grid-column: 1/3
             padding: 12px
+            margin: 0
             margin-top: 10px

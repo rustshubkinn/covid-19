@@ -1,3 +1,5 @@
+include ../../components/help-button/help-button
+
 section(class="let-us-help")
   div(class="container") 
     div(class="let-us-help-wrapper")
@@ -5,5 +7,5 @@ section(class="let-us-help")
         h2(class="covid19") COVID-19 Alert
         h3(class="title") Stay at Home Quarantine to Stop Corona Virus
         p There Is No Specific Medicine To Prevent Or Treat Coronavirus Disease (COVID-19). People May Need Supportive Care To.
-        a(href="#" class="help-btn") Let Us Help 
+        +help-button("#", "Let Us Help") 
 
