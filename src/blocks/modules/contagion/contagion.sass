@@ -1,0 +1,54 @@
+section.contagion
+  .contagion-title
+    text-align: center
+    margin-bottom: 111px
+    h3
+      margin-bottom: 30px
+  .contagion-list
+    display: grid
+    grid-gap: 30px
+    grid-template-columns: repeat(3, 1fr)
+    .contagion-item
+      text-align: center
+      box-shadow: 0px 5px 80px rgba(0, 0, 0, 0.08)
+      border-radius: 10px
+      padding: 50px
+      transition: border-bottom .25s ease
+      position: relative
+      z-index: 5
+      &:hover
+        border-bottom: 7px solid $button-color
+      img
+        max-width: 75%
+        padding-bottom: 40px
+      h3
+        font-weight: 500
+        font-size: 36px
+        line-height: 53px
+        color: $green-title-color
+
+@media ( max-width: 1199px )
+  section.contagion
+    .contagion-title
+      margin-bottom: 60px
+    .contagion-list
+      .contagion-item
+        padding: 20px
+        img
+          max-width: 60%
+          padding-bottom: 20px
+        h3
+          font-size: 25px
+          line-height: 40px
+
+@media ( max-width: 991px )
+  section.contagion
+    .contagion-list
+      grid-template-rows: repeat(3, 1fr)
+      grid-template-columns: repeat(1, 1fr)
+      .contagion-item
+        img
+          max-width: 40%
+        p
+          max-width: 80%
+          margin: 0 auto
