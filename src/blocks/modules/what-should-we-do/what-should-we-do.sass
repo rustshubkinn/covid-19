@@ -1,0 +1,65 @@
+section.what-should-we-do
+  margin-top: 90px
+  .title-text
+    text-align: center
+    max-width: 48%
+    margin: 0 auto
+  .should-do-list
+    margin-top: 70px
+    li
+      display: flex
+      justify-content: space-between
+      align-items: center
+      .text-wrapper
+        display: flex
+        align-items: flex-start
+        width: 47%
+        div
+          h3
+            font-weight: 500
+            font-size: 47px
+            line-height: 69px
+            color: $green-title-color
+        span
+          background: linear-gradient(104.46deg, #FFF8F5 6.01%, #FFDEDE 94.85%)
+          font-family: Red Hat Display
+          color: $red-title-color
+          display: flex
+          justify-content: center
+          align-items: center
+          font-weight: 700
+          font-size: 44px
+          line-height: 64px
+          border-radius: 50%
+          min-width: 75px
+          min-height: 75px
+          margin-right: 50px
+      img
+        width: 100%
+
+@media ( max-width: 1199px )
+  section.what-should-we-do
+    text-align: center
+    .should-do-list
+      li
+        flex-direction: column
+        &:nth-child(odd)
+          flex-direction: column-reverse
+        .text-wrapper
+          flex-direction: column
+          width: 80%
+          span
+            margin: 0 auto
+        img
+          width: 90%
+
+@media ( max-width: 767px )
+  section.what-should-we-do
+    .title-text
+      max-width: 100%
+    .should-do-list
+      li
+        .text-wrapper
+          width: 100%
+        img
+          width: 100%
