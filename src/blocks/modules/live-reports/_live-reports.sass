@@ -1,0 +1,111 @@
+section.live-reports
+  .reports-wrapper
+    display: flex
+    align-items: flex-start
+    .map
+      background-image: url(../img/map.webp)
+      background-repeat: no-repeat
+      background-size: 900px
+      background-position: bottom
+      padding-bottom: 300px
+      display: flex
+      justify-content: space-between
+      align-items: flex-start
+      width: 65%
+      margin-right: 40px
+      .control-buttons
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: #FFFFFF
+        box-shadow: 0px 5px 50px rgba(104, 33, 28, 0.1)
+        border-radius: 5px
+        padding: 23px 30px
+        margin-left: 60px
+        margin-bottom: 45px
+        .zoom
+          display: flex
+          flex-direction: column
+          svg
+            &:last-child
+              margin: 50px 0
+        .up-down
+          display: flex
+          flex-direction: column
+          svg
+            &:last-child
+              transform: rotate(180deg)
+              path
+                fill: #A2A5B2
+      .search-button
+        display: flex
+        align-items: center
+        box-shadow: 0px 7px 76px rgba(146, 53, 46, 0.18)
+        border-radius: 5px
+        padding: 22px 22px
+
+    .stats
+      display: flex
+      flex-direction: column
+      background: linear-gradient(360deg, #FFFBFB -79.45%, #FDFDFD 105.35%)
+      box-shadow: 0px 7px 95px rgba(0, 0, 0, 0.07)
+      width: 37%
+      padding: 54px 55px 30px 55px
+      .stats-buttons
+        display: flex
+        justify-content: space-between
+        align-items: center
+        p
+          color: $green-title-color
+          font-weight: 500
+          font-size: 48px
+          line-height: 58px
+          margin: 0
+        div
+          display: flex
+          align-items: center
+          box-shadow: 0px 5px 50px rgba(87, 1, 0, 0.1)
+          border-radius: 6px
+          padding: 15px
+          svg
+            &:last-child
+              transform: rotate(180deg)
+              path
+                stroke: #F44A45
+          span
+            border: 2px solid #DEE1ED
+            transform: rotate(180deg)
+            margin: 0 20px
+            height: 20px
+      .stats-numbers
+        display: flex
+        flex-direction: column
+        margin-top: 30px
+        li
+          display: flex
+          justify-content: space-between
+          &:nth-child(3)
+            .country-stats
+              svg
+                transform: rotate(-180deg)
+                path
+                  fill: #128E5A
+          .country
+            display: flex
+            align-items: center
+            p
+              font-weight: 500
+              font-size: 31px
+              line-height: 37px
+              color: $green-title-color
+              margin: 0
+              margin-left: 27px
+          .country-stats
+            display: flex
+            align-items: center
+            p
+              color: $green-title-color
+              font-weight: 500
+              font-size: 24px
+              line-height: 29px
+              margin-right: 21px
