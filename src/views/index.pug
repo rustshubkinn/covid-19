@@ -13,8 +13,10 @@ block content
 		include ../blocks/modules/contagion/contagion.pug
 		include ../blocks/modules/symptomps/symptomps.pug 
 		include ../blocks/modules/what-should-we-do/what-should-we-do.pug
-		include ../blocks/modules/live-reports/live-reports.pug
-
+		div(class="footer-wrapper")
+			include ../blocks/modules/live-reports/live-reports.pug
+			include ../blocks/modules/mailing/mailing.pug
+			
 block scripts
 	script(src="js/main.js")
 	script(src="js/vendor.js")

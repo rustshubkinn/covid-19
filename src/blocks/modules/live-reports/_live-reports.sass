@@ -143,8 +143,18 @@ section.live-reports
             margin: 0 auto
             width: 50%
         .stats-numbers
+          width: 70%
+          margin: 0 auto
+          margin-top: 20px
+          li
+            .country-stats
+              margin-left: 80px
+
+@media ( max-width: 767px )
+  section.live-reports
+    .reports-wrapper
+      .stats
+        .stats-numbers
           li
             flex-direction: column
             align-items: flex-start
-            .country-stats
-              margin-left: 80px
