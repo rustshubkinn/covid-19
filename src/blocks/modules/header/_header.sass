@@ -26,19 +26,18 @@ header
         flex-direction: column
         align-items: center
         margin-right: 40px
-        a
-          line-height: 10px
-          transition: color .25s ease
-          &::after
-            content: '.'
-            display: none
+        line-height: 10px
+        transition: color .25s ease
+        &::after
+          content: '.'
+          display: none
+          text-align: center
+          color: $button-color
+          font-size: 40px
+          line-height: 0px
+        &:hover
+          &:not(:last-child)
             color: $button-color
-            font-size: 40px
-            line-height: 0px
-            margin-top: 9px
-          &:hover
-            color: $button-color
-            margin-top: 9px
             &::after
               display: block
 
