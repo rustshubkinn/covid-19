@@ -1,6 +1,6 @@
 # gulp-pug-starter
 
-[Live Version](https://thirsty-gates-0a0b39.netlify.app/)
+[Live Version](https://compassionate-joliot-c75d65.netlify.app/)
 
 ![GitHub release](https://img.shields.io/github/release/andreyalexeich/gulp-pug-starter.svg)
 [![dependencies Status](https://david-dm.org/andreyalexeich/gulp-pug-starter/status.svg)](https://david-dm.org/andreyalexeich/gulp-pug-starter)
