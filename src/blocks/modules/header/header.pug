@@ -1,12 +1,15 @@
 include ../../components/contact-button/contact-button
+include ../../components/burger-menu/burger-menu
 
 header 
   div(class="container")
     nav  
-      div(class="logo")
-        a(href="#")
-          include ../../../img/svg/covid-logo.svg
-          h2 covid-19 
+      div(class="burger-wrapper")
+        div(class="logo")
+          a(href="#")
+            include ../../../img/svg/covid-logo.svg
+            h2 covid-19 
+        +burger-menu
       ul(class="nav-list")
         li 
           a(href="#") Overview
@@ -18,4 +21,3 @@ header
           a(href="#") Prevention
         li  
           +contact-button('#', "Contact")
-
