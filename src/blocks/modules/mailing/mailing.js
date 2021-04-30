@@ -4,23 +4,23 @@ const form = document.forms.mailForm;
 
 // Events
 form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    onSubmit();
+  e.preventDefault();
+  onSubmit();
 });
 
 // Handlers
 function onSubmit() {
-    fetch("https://jsonplaceholder.typicode.com/posts", {
-        method: "POST",
-        headers: {
-            "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-            email: `${inputMail.value}`
-        })
+  fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      email: `${inputMail.value}`
     })
-        .then(res => {
-            return res.json();
-        })
-        .then(data => console.log(data));
+  })
+    .then(res => {
+      return res.json();
+    })
+    .then(data => console.log(data));
 }

@@ -6,5 +6,5 @@ const navMenu = document.querySelector(".nav-list");
 
 // Event Listeners
 burgerButton.addEventListener("click", function openMenu() {
-    navMenu.classList.toggle("mobile");
+  navMenu.classList.toggle("mobile");
 });
