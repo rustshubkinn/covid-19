@@ -1,26 +1,28 @@
 // Elements
-const inputMail = document.getElementById("emailAddress");
 const form = document.forms.mailForm;
+const inputMail = document.getElementById("emailAddress");
 
 // Events
-form.addEventListener("submit", (e) => {
-  e.preventDefault();
-  onSubmit();
-});
+form.addEventListener("submit", (e) => onSubmit(e));
 
-// Handlers
-function onSubmit() {
-  fetch("https://jsonplaceholder.typicode.com/posts", {
+// HTTP Request
+const url = "https://jsonplaceholder.typicode.com";
+
+function postEmail(email) {
+  fetch(`${url}/posts`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      email: `${inputMail.value}`
+      email
     })
   })
-    .then(res => {
-      return res.json();
-    })
     .then(data => console.log(data));
+}
+
+// Handlers
+function onSubmit(e) {
+  e.preventDefault();
+  postEmail(inputMail.value); 
 }
