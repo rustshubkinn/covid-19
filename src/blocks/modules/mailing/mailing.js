@@ -5,7 +5,7 @@ const inputMail = form.elements.emailAdress;
 // Events
 form.addEventListener("submit", (e) => onSubmit(e));
 
-// HTTP Request
+
 const URL = "https://jsonplaceholder.typicode.com";
 
 function postEmail(email) {
@@ -14,11 +14,8 @@ function postEmail(email) {
     headers: {
       "Content-Type": "application/json"
     },
-    body: JSON.stringify({
-      email
-    })
-  })
-    .then(data => console.log(data));
+    body: JSON.stringify({ email })
+  }) .then(data => console.log(data));
 }
 
 // Handlers
