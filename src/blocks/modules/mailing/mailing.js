@@ -6,10 +6,10 @@ const inputMail = form.elements.emailAdress;
 form.addEventListener("submit", (e) => onSubmit(e));
 
 // HTTP Request
-const url = "https://jsonplaceholder.typicode.com";
+const URL = "https://jsonplaceholder.typicode.com";
 
 function postEmail(email) {
-  fetch(`${url}/posts`, {
+  fetch(`${URL}/posts`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
