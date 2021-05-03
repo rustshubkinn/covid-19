@@ -1,6 +1,6 @@
 // Elements
 const form = document.forms.mailForm;
-const inputMail = document.getElementById("emailAddress");
+const inputMail = form.elements.emailAdress;
 
 // Events
 form.addEventListener("submit", (e) => onSubmit(e));
